@@ -3,7 +3,7 @@
   "version": "1.0.5",
   "description": "Z80 test suite",
   "main": "dist/main/index.js",
-  "typing": "dist/main/index.d.ts",
+  "types": "dist/main/index.d.ts",
   "module": "dist/module/index.js",
   "repository": "https://github.com/lkesteloot/z80-test",
   "author": "Lawrence Kesteloot <lk@teamten.com> (https://www.teamten.com/lawrence/)",
@@ -20,7 +20,8 @@
     "lint": "tslint --project . --format codeFrame",
     "lint:fix": "npm run lint -- --fix",
     "test": "npm run build:test && node dist-tests/tests/Test.js",
-    "clean": "rm -rf dist dist-tests"
+    "clean": "rm -rf dist dist-tests",
+    "prepare": "npm run build"
   },
   "keywords": [
     "z80"
@@ -32,6 +33,6 @@
     "typescript": "^3.7.4"
   },
   "dependencies": {
-    "z80-base": "^1.0.3"
+    "z80-base": "^1.0.6"
   }
 }
