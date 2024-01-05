@@ -1,3 +1,5 @@
+This project has been moved to https://github.com/lkesteloot/trs80
+
 # z80-test
 
 This is a TypeScript-based test suite for Z80 emulators. It runs the
